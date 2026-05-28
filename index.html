@@ -22,18 +22,18 @@
       --text-dark: #1a0d3d;
       --card-bg: #ffffff;
     }
-
+ 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
     html { scroll-behavior: smooth; }
-
+ 
     body {
       font-family: 'Nunito', sans-serif;
       background: var(--off-white);
       color: var(--text-dark);
       overflow-x: hidden;
     }
-
+ 
     /* ─── NAV ─────────────────────────────────────────────── */
     nav {
       position: fixed;
@@ -48,7 +48,7 @@
       height: 64px;
       border-bottom: 2px solid var(--pink);
     }
-
+ 
     .nav-logo {
       font-family: 'Fredoka One', cursive;
       font-size: 1.4rem;
@@ -56,13 +56,13 @@
       letter-spacing: 0.5px;
     }
     .nav-logo span { color: var(--pink); }
-
+ 
     .nav-links {
       display: flex;
       gap: 1.5rem;
       list-style: none;
     }
-
+ 
     .nav-links a {
       color: rgba(255,255,255,0.85);
       text-decoration: none;
@@ -73,7 +73,7 @@
       transition: color 0.2s;
     }
     .nav-links a:hover { color: var(--pink-light); }
-
+ 
     .nav-cta {
       background: var(--pink);
       color: var(--white) !important;
@@ -82,7 +82,7 @@
       transition: background 0.2s, transform 0.2s !important;
     }
     .nav-cta:hover { background: var(--pink-light) !important; transform: scale(1.05); }
-
+ 
     .hamburger {
       display: none;
       flex-direction: column;
@@ -98,7 +98,7 @@
       border-radius: 3px;
       transition: 0.3s;
     }
-
+ 
     /* ─── HERO ─────────────────────────────────────────────── */
     .hero {
       min-height: 100vh;
@@ -114,7 +114,7 @@
       position: relative;
       overflow: hidden;
     }
-
+ 
     .hero::before {
       content: '';
       position: absolute;
@@ -124,7 +124,7 @@
       background: var(--off-white);
       clip-path: ellipse(55% 100% at 50% 100%);
     }
-
+ 
     .hero-badge {
       display: inline-block;
       background: var(--yellow);
@@ -138,7 +138,7 @@
       margin-bottom: 1.5rem;
       animation: fadeDown 0.6s ease both;
     }
-
+ 
     .hero h1 {
       font-family: 'Fredoka One', cursive;
       font-size: clamp(3rem, 8vw, 7rem);
@@ -147,12 +147,12 @@
       text-shadow: 0 4px 30px rgba(0,0,0,0.4);
       animation: fadeDown 0.7s ease 0.1s both;
     }
-
+ 
     .hero h1 .highlight {
       color: var(--pink-light);
       display: block;
     }
-
+ 
     .hero-subtitle {
       font-size: clamp(1.1rem, 2.5vw, 1.6rem);
       color: rgba(255,255,255,0.9);
@@ -161,7 +161,7 @@
       letter-spacing: 1px;
       animation: fadeDown 0.7s ease 0.2s both;
     }
-
+ 
     .hero-buttons {
       display: flex;
       gap: 1rem;
@@ -169,7 +169,7 @@
       justify-content: center;
       animation: fadeDown 0.7s ease 0.3s both;
     }
-
+ 
     .btn-primary {
       background: var(--pink);
       color: var(--white);
@@ -190,7 +190,7 @@
       transform: translateY(-3px) scale(1.03);
       box-shadow: 0 12px 40px rgba(233,30,140,0.65);
     }
-
+ 
     .btn-secondary {
       background: rgba(255,255,255,0.15);
       color: var(--white);
@@ -210,7 +210,7 @@
       background: rgba(255,255,255,0.28);
       transform: translateY(-3px);
     }
-
+ 
     .hero-disclaimer {
       display: inline-flex;
       align-items: center;
@@ -227,18 +227,18 @@
       letter-spacing: 0.3px;
       animation: fadeUp 0.7s ease 0.35s both;
     }
-
+ 
     .hero-disclaimer .disc-icon {
       font-size: 0.95rem;
       flex-shrink: 0;
     }
-
+ 
     .hero-disclaimer a {
       color: var(--yellow);
       text-decoration: underline;
       text-underline-offset: 2px;
     }
-
+ 
     .hero-stats {
       display: flex;
       gap: 2.5rem;
@@ -247,7 +247,7 @@
       flex-wrap: wrap;
       justify-content: center;
     }
-
+ 
     .stat {
       text-align: center;
     }
@@ -264,12 +264,12 @@
       letter-spacing: 1px;
       font-weight: 700;
     }
-
+ 
     /* ─── SECTION COMMONS ─────────────────────────────────── */
     section { padding: 5rem 2rem; }
-
+ 
     .container { max-width: 1200px; margin: 0 auto; }
-
+ 
     .section-tag {
       display: inline-block;
       background: var(--pink);
@@ -282,7 +282,7 @@
       border-radius: 50px;
       margin-bottom: 1rem;
     }
-
+ 
     .section-title {
       font-family: 'Fredoka One', cursive;
       font-size: clamp(2rem, 4vw, 3.2rem);
@@ -290,9 +290,9 @@
       line-height: 1.1;
       margin-bottom: 1rem;
     }
-
+ 
     .section-title .accent { color: var(--pink); }
-
+ 
     .section-subtitle {
       font-size: 1.1rem;
       color: #5a4a8a;
@@ -300,13 +300,13 @@
       font-weight: 600;
       line-height: 1.6;
     }
-
+ 
     /* ─── ABOUT ─────────────────────────────────────────────── */
     #about {
       background: var(--white);
       position: relative;
     }
-
+ 
     .about-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -315,7 +315,7 @@
       margin-top: 3rem;
       max-width: 780px;
     }
-
+ 
     .about-text p {
       font-size: 1.05rem;
       color: #3d2e70;
@@ -323,14 +323,14 @@
       margin-bottom: 1.2rem;
       font-weight: 600;
     }
-
+ 
     .about-pills {
       display: flex;
       flex-wrap: wrap;
       gap: 0.6rem;
       margin-top: 1.5rem;
     }
-
+ 
     .pill {
       background: var(--off-white);
       border: 2px solid var(--purple-light);
@@ -340,37 +340,37 @@
       font-size: 0.85rem;
       font-weight: 800;
     }
-
+ 
     .about-visual {
       position: relative;
     }
-
+ 
     .about-img-stack {
       position: relative;
       height: 420px;
     }
-
+ 
     .about-card-img {
       position: absolute;
       border-radius: 24px;
       overflow: hidden;
       box-shadow: 0 20px 60px rgba(45,27,105,0.25);
     }
-
+ 
     .about-card-img img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
     }
-
+ 
     .about-card-img.big {
       width: 75%;
       height: 300px;
       top: 20px;
       left: 0;
     }
-
+ 
     .about-card-img.small {
       width: 55%;
       height: 210px;
@@ -378,7 +378,7 @@
       right: 0;
       border: 4px solid var(--white);
     }
-
+ 
     .merlin-badge {
       position: absolute;
       top: 0;
@@ -393,23 +393,23 @@
       line-height: 1.4;
       box-shadow: 0 8px 20px rgba(45,27,105,0.4);
     }
-
+ 
     /* ─── ATTRACTIONS ──────────────────────────────────────── */
     #attractions {
       background: var(--off-white);
     }
-
+ 
     .attractions-header {
       text-align: center;
       margin-bottom: 3.5rem;
     }
-
+ 
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 1.8rem;
     }
-
+ 
     .card {
       background: var(--white);
       border-radius: 24px;
@@ -418,13 +418,13 @@
       transition: transform 0.3s, box-shadow 0.3s;
       border: 2px solid transparent;
     }
-
+ 
     .card:hover {
       transform: translateY(-8px);
       box-shadow: 0 20px 50px rgba(45,27,105,0.18);
       border-color: var(--pink);
     }
-
+ 
     .card-banner {
       height: 180px;
       display: flex;
@@ -433,7 +433,7 @@
       position: relative;
       overflow: hidden;
     }
-
+ 
     .card-banner::before {
       content: '';
       position: absolute;
@@ -442,24 +442,24 @@
       transition: transform 0.4s;
     }
     .card:hover .card-banner::before { transform: scale(1.06); }
-
+ 
     .card-banner.theme-park  { background: linear-gradient(135deg, #2d1b69 0%, #e91e8c 100%); }
     .card-banner.waterpark   { background: linear-gradient(135deg, #1a9fd4 0%, #0d6ea0 100%); }
     .card-banner.cbeebies    { background: linear-gradient(135deg, #ff6b35 0%, #ffd700 100%); }
     .card-banner.golf        { background: linear-gradient(135deg, #2ecc71 0%, #1a9fd4 100%); }
     .card-banner.bluey       { background: linear-gradient(135deg, #4b7bff 0%, #9b59b6 100%); }
-
+ 
     .card-emoji {
       font-size: 3rem;
       position: relative;
       z-index: 1;
       filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
     }
-
+ 
     .card-body {
       padding: 1.5rem;
     }
-
+ 
     .card-tag {
       font-size: 0.7rem;
       font-weight: 900;
@@ -468,28 +468,28 @@
       color: var(--pink);
       margin-bottom: 0.5rem;
     }
-
+ 
     .card h3 {
       font-family: 'Fredoka One', cursive;
       font-size: 1.45rem;
       color: var(--purple);
       margin-bottom: 0.7rem;
     }
-
+ 
     .card p {
       font-size: 0.92rem;
       color: #5a4a8a;
       line-height: 1.6;
       font-weight: 600;
     }
-
+ 
     .card-rides {
       display: flex;
       flex-wrap: wrap;
       gap: 0.4rem;
       margin-top: 1rem;
     }
-
+ 
     .ride-tag {
       background: #f0ebff;
       color: var(--purple-light);
@@ -498,7 +498,7 @@
       font-size: 0.75rem;
       font-weight: 800;
     }
-
+ 
     /* ─── ACCOMMODATION ────────────────────────────────────── */
     #accommodation {
       background: var(--purple);
@@ -506,7 +506,7 @@
       position: relative;
       overflow: hidden;
     }
-
+ 
     #accommodation::before {
       content: '';
       position: absolute;
@@ -515,7 +515,7 @@
       background: radial-gradient(circle, rgba(233,30,140,0.25) 0%, transparent 70%);
       border-radius: 50%;
     }
-
+ 
     #accommodation::after {
       content: '';
       position: absolute;
@@ -524,16 +524,16 @@
       background: radial-gradient(circle, rgba(26,159,212,0.2) 0%, transparent 70%);
       border-radius: 50%;
     }
-
+ 
     #accommodation .section-tag {
       background: var(--yellow);
       color: var(--purple);
     }
-
+ 
     #accommodation .section-title { color: var(--white); }
     #accommodation .section-title .accent { color: var(--pink-light); }
     #accommodation .section-subtitle { color: rgba(255,255,255,0.8); }
-
+ 
     .accom-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -542,7 +542,7 @@
       position: relative;
       z-index: 1;
     }
-
+ 
     .accom-card {
       background: rgba(255,255,255,0.08);
       border: 2px solid rgba(255,255,255,0.15);
@@ -551,32 +551,32 @@
       backdrop-filter: blur(8px);
       transition: background 0.3s, transform 0.3s, border-color 0.3s;
     }
-
+ 
     .accom-card:hover {
       background: rgba(255,255,255,0.14);
       border-color: var(--pink-light);
       transform: translateY(-5px);
     }
-
+ 
     .accom-icon {
       font-size: 2.5rem;
       margin-bottom: 1rem;
     }
-
+ 
     .accom-card h3 {
       font-family: 'Fredoka One', cursive;
       font-size: 1.4rem;
       color: var(--white);
       margin-bottom: 0.7rem;
     }
-
+ 
     .accom-card p {
       font-size: 0.92rem;
       color: rgba(255,255,255,0.8);
       line-height: 1.6;
       font-weight: 600;
     }
-
+ 
     .accom-perks {
       margin-top: 3rem;
       background: rgba(255,255,255,0.1);
@@ -590,7 +590,7 @@
       z-index: 1;
       border: 1px solid rgba(255,255,255,0.15);
     }
-
+ 
     .perk {
       display: flex;
       align-items: center;
@@ -599,25 +599,25 @@
       font-size: 0.95rem;
       color: var(--yellow);
     }
-
+ 
     .perk-icon { font-size: 1.3rem; }
-
+ 
     /* ─── TICKETS ──────────────────────────────────────────── */
     #tickets {
       background: var(--white);
     }
-
+ 
     .tickets-header {
       text-align: center;
       margin-bottom: 3.5rem;
     }
-
+ 
     .tickets-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 1.8rem;
     }
-
+ 
     .ticket-card {
       border-radius: 28px;
       padding: 2.5rem 2rem;
@@ -626,28 +626,28 @@
       overflow: hidden;
       transition: transform 0.3s;
     }
-
+ 
     .ticket-card:hover { transform: translateY(-6px); }
-
+ 
     .ticket-card.day {
       background: linear-gradient(135deg, #f0ebff, #fff);
       border: 3px solid var(--purple-light);
     }
-
+ 
     .ticket-card.breaks {
       background: linear-gradient(135deg, var(--purple), var(--purple-mid));
       color: var(--white);
       box-shadow: 0 20px 60px rgba(45,27,105,0.35);
       transform: scale(1.03);
     }
-
+ 
     .ticket-card.breaks:hover { transform: scale(1.03) translateY(-6px); }
-
+ 
     .ticket-card.annual {
       background: linear-gradient(135deg, #fff0f8, #fff);
       border: 3px solid var(--pink);
     }
-
+ 
     .ticket-badge {
       position: absolute;
       top: -1px;
@@ -662,43 +662,43 @@
       padding: 0.3rem 1rem;
       border-radius: 0 0 12px 12px;
     }
-
+ 
     .ticket-icon { font-size: 2.8rem; margin-bottom: 1rem; }
-
+ 
     .ticket-card h3 {
       font-family: 'Fredoka One', cursive;
       font-size: 1.5rem;
       margin-bottom: 0.3rem;
     }
-
+ 
     .ticket-card.day h3,
     .ticket-card.annual h3 { color: var(--purple); }
     .ticket-card.breaks h3 { color: var(--white); }
-
+ 
     .ticket-price {
       font-family: 'Fredoka One', cursive;
       font-size: 3rem;
       line-height: 1;
       margin: 1rem 0 0.3rem;
     }
-
+ 
     .ticket-card.day .ticket-price { color: var(--purple-light); }
     .ticket-card.breaks .ticket-price { color: var(--yellow); }
     .ticket-card.annual .ticket-price { color: var(--pink); }
-
+ 
     .ticket-per {
       font-size: 0.85rem;
       font-weight: 700;
       opacity: 0.7;
       margin-bottom: 1.2rem;
     }
-
+ 
     .ticket-features {
       list-style: none;
       text-align: left;
       space-y: 0.5rem;
     }
-
+ 
     .ticket-features li {
       display: flex;
       align-items: center;
@@ -708,14 +708,14 @@
       padding: 0.35rem 0;
       border-bottom: 1px solid rgba(45,27,105,0.07);
     }
-
+ 
     .ticket-card.breaks .ticket-features li {
       border-bottom-color: rgba(255,255,255,0.1);
     }
-
+ 
     .ticket-features .check { color: var(--pink); font-size: 1.1rem; }
     .ticket-card.breaks .ticket-features .check { color: var(--yellow); }
-
+ 
     .kids-free {
       margin-top: 2.5rem;
       text-align: center;
@@ -730,12 +730,12 @@
       justify-content: center;
       gap: 0.6rem;
     }
-
+ 
     /* ─── PLAN ──────────────────────────────────────────────── */
     #plan {
       background: var(--off-white);
     }
-
+ 
     .plan-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -743,14 +743,14 @@
       align-items: start;
       margin-top: 3rem;
     }
-
+ 
     .plan-info-list {
       list-style: none;
       display: flex;
       flex-direction: column;
       gap: 1.2rem;
     }
-
+ 
     .plan-item {
       display: flex;
       gap: 1.2rem;
@@ -761,9 +761,9 @@
       box-shadow: 0 4px 15px rgba(45,27,105,0.06);
       border-left: 4px solid var(--pink);
     }
-
+ 
     .plan-item-icon { font-size: 1.6rem; flex-shrink: 0; }
-
+ 
     .plan-item-text strong {
       display: block;
       font-size: 0.85rem;
@@ -773,13 +773,13 @@
       font-weight: 900;
       margin-bottom: 0.2rem;
     }
-
+ 
     .plan-item-text span {
       font-size: 0.95rem;
       color: #3d2e70;
       font-weight: 700;
     }
-
+ 
     .map-box {
       background: var(--white);
       border-radius: 24px;
@@ -787,7 +787,7 @@
       box-shadow: 0 12px 40px rgba(45,27,105,0.12);
       border: 3px solid var(--purple-light);
     }
-
+ 
     .map-header {
       background: var(--purple);
       color: var(--white);
@@ -798,7 +798,7 @@
       align-items: center;
       gap: 0.6rem;
     }
-
+ 
     .map-placeholder {
       height: 280px;
       background: linear-gradient(135deg, #e8e0ff, #d0e8ff);
@@ -809,37 +809,37 @@
       gap: 0.8rem;
       font-size: 4rem;
     }
-
+ 
     .map-address {
       padding: 1.2rem 1.5rem;
       background: var(--off-white);
     }
-
+ 
     .map-address p {
       font-size: 0.9rem;
       color: #5a4a8a;
       font-weight: 700;
       line-height: 1.6;
     }
-
+ 
     .map-address strong { color: var(--purple); }
-
+ 
     /* ─── REVIEWS ───────────────────────────────────────────── */
     #reviews {
       background: var(--white);
     }
-
+ 
     .reviews-header {
       text-align: center;
       margin-bottom: 3rem;
     }
-
+ 
     .reviews-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 1.5rem;
     }
-
+ 
     .review-card {
       background: var(--off-white);
       border-radius: 20px;
@@ -848,12 +848,12 @@
       transition: border-color 0.3s, transform 0.3s;
       position: relative;
     }
-
+ 
     .review-card:hover {
       border-color: var(--pink);
       transform: translateY(-4px);
     }
-
+ 
     .review-card::before {
       content: '"';
       position: absolute;
@@ -865,13 +865,13 @@
       line-height: 1;
       opacity: 0.3;
     }
-
+ 
     .stars {
       color: var(--yellow);
       font-size: 1.2rem;
       margin-bottom: 1rem;
     }
-
+ 
     .review-text {
       font-size: 0.95rem;
       color: #3d2e70;
@@ -880,13 +880,13 @@
       font-style: italic;
       margin-bottom: 1.2rem;
     }
-
+ 
     .reviewer {
       display: flex;
       align-items: center;
       gap: 0.8rem;
     }
-
+ 
     .reviewer-avatar {
       width: 44px;
       height: 44px;
@@ -897,27 +897,27 @@
       font-size: 1.3rem;
       flex-shrink: 0;
     }
-
+ 
     .reviewer-info strong {
       display: block;
       font-size: 0.9rem;
       font-weight: 900;
       color: var(--purple);
     }
-
+ 
     .reviewer-info span {
       font-size: 0.78rem;
       color: #8a7aaa;
       font-weight: 700;
     }
-
+ 
     /* ─── FOOTER ────────────────────────────────────────────── */
     footer {
       background: var(--text-dark);
       color: rgba(255,255,255,0.75);
       padding: 3.5rem 2rem 2rem;
     }
-
+ 
     .footer-grid {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -927,16 +927,16 @@
       padding-bottom: 3rem;
       border-bottom: 1px solid rgba(255,255,255,0.1);
     }
-
+ 
     .footer-brand .logo {
       font-family: 'Fredoka One', cursive;
       font-size: 1.8rem;
       color: var(--white);
       margin-bottom: 0.8rem;
     }
-
+ 
     .footer-brand .logo span { color: var(--pink); }
-
+ 
     .footer-brand p {
       font-size: 0.88rem;
       line-height: 1.7;
@@ -944,7 +944,7 @@
       font-weight: 600;
       margin-bottom: 1.2rem;
     }
-
+ 
     .merlin-tag {
       display: inline-flex;
       align-items: center;
@@ -957,7 +957,7 @@
       font-weight: 800;
       color: rgba(255,255,255,0.8);
     }
-
+ 
     .footer-col h4 {
       font-family: 'Fredoka One', cursive;
       color: var(--white);
@@ -965,13 +965,13 @@
       margin-bottom: 1.2rem;
       letter-spacing: 0.5px;
     }
-
+ 
     .footer-col ul { list-style: none; }
-
+ 
     .footer-col ul li {
       margin-bottom: 0.6rem;
     }
-
+ 
     .footer-col ul li a {
       color: rgba(255,255,255,0.6);
       text-decoration: none;
@@ -979,9 +979,9 @@
       font-weight: 600;
       transition: color 0.2s;
     }
-
+ 
     .footer-col ul li a:hover { color: var(--pink-light); }
-
+ 
     .footer-bottom {
       max-width: 1200px;
       margin: 2rem auto 0;
@@ -991,18 +991,18 @@
       flex-wrap: wrap;
       gap: 1rem;
     }
-
+ 
     .footer-bottom p {
       font-size: 0.82rem;
       color: rgba(255,255,255,0.4);
       font-weight: 600;
     }
-
+ 
     .footer-bottom-links {
       display: flex;
       gap: 1.5rem;
     }
-
+ 
     .footer-bottom-links a {
       font-size: 0.82rem;
       color: rgba(255,255,255,0.4);
@@ -1011,44 +1011,44 @@
       transition: color 0.2s;
     }
     .footer-bottom-links a:hover { color: rgba(255,255,255,0.8); }
-
+ 
     /* ─── ANIMATIONS ────────────────────────────────────────── */
     @keyframes fadeDown {
       from { opacity: 0; transform: translateY(-20px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-
+ 
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(20px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-
+ 
     /* ─── RESPONSIVE ────────────────────────────────────────── */
     @media (max-width: 900px) {
       .about-grid,
       .plan-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-
+ 
       .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
-
+ 
       .nav-links { display: none; }
       .hamburger { display: flex; }
     }
-
+ 
     @media (max-width: 600px) {
       section { padding: 3.5rem 1.2rem; }
-
+ 
       .hero h1 { font-size: 2.8rem; }
-
+ 
       .ticket-card.breaks { transform: scale(1); }
       .ticket-card.breaks:hover { transform: translateY(-6px); }
-
+ 
       .footer-grid { grid-template-columns: 1fr; }
-
+ 
       .footer-bottom { flex-direction: column; text-align: center; }
-
+ 
       .hero-stats { gap: 1.5rem; }
     }
-
+ 
     /* ─── PRIVACY MODAL ─────────────────────────────────── */
     .modal-overlay {
       position: fixed;
@@ -1064,12 +1064,12 @@
       pointer-events: none;
       transition: opacity 0.3s ease;
     }
-
+ 
     .modal-overlay.open {
       opacity: 1;
       pointer-events: all;
     }
-
+ 
     .modal-box {
       background: var(--white);
       border-radius: 28px;
@@ -1084,11 +1084,11 @@
       scrollbar-width: thin;
       scrollbar-color: var(--pink) #f0ebff;
     }
-
+ 
     .modal-overlay.open .modal-box {
       transform: translateY(0) scale(1);
     }
-
+ 
     .modal-close {
       position: sticky;
       top: 1rem;
@@ -1109,69 +1109,69 @@
       transition: background 0.2s, color 0.2s;
       z-index: 10;
     }
-
+ 
     .modal-close:hover {
       background: var(--pink);
       color: var(--white);
       border-color: var(--pink);
     }
-
+ 
     .modal-header {
       background: linear-gradient(135deg, var(--purple), var(--purple-mid));
       padding: 2.5rem 2.5rem 2rem;
       text-align: center;
       border-radius: 24px 24px 0 0;
     }
-
+ 
     .modal-icon { font-size: 2.5rem; display: block; margin-bottom: 0.6rem; }
-
+ 
     .modal-header h2 {
       font-family: 'Fredoka One', cursive;
       font-size: 2rem;
       color: var(--white);
       margin-bottom: 0.3rem;
     }
-
+ 
     .modal-header p {
       font-size: 0.82rem;
       color: rgba(255,255,255,0.6);
       font-weight: 700;
     }
-
+ 
     .modal-body {
       padding: 2rem 2.5rem 2.5rem;
     }
-
+ 
     .policy-block {
       margin-bottom: 1.8rem;
       padding-bottom: 1.8rem;
       border-bottom: 1px solid #ede8f8;
     }
-
+ 
     .policy-block:last-of-type {
       border-bottom: none;
     }
-
+ 
     .policy-block h3 {
       font-family: 'Fredoka One', cursive;
       font-size: 1.1rem;
       color: var(--purple);
       margin-bottom: 0.6rem;
     }
-
+ 
     .policy-block p {
       font-size: 0.92rem;
       color: #4a3a7a;
       line-height: 1.75;
       font-weight: 600;
     }
-
+ 
     .policy-block a {
       color: var(--pink);
       text-decoration: underline;
       text-underline-offset: 2px;
     }
-
+ 
     .policy-disclaimer {
       background: linear-gradient(135deg, #fff0f8, #f0ebff);
       border: 2px solid var(--pink);
@@ -1183,12 +1183,12 @@
       line-height: 1.6;
       margin-top: 0.5rem;
     }
-
+ 
     .policy-disclaimer a {
       color: var(--pink);
       text-decoration: underline;
     }
-
+ 
     /* ─── scroll-reveal utility ─────────────────────────── */
     .reveal {
       opacity: 1;
@@ -1206,7 +1206,7 @@
   </style>
 </head>
 <body>
-
+ 
   <!-- ─── NAV ─────────────────────────── -->
   <nav>
     <div class="nav-logo">Alton <span>Towers</span></div>
@@ -1222,7 +1222,7 @@
       <span></span><span></span><span></span>
     </div>
   </nav>
-
+ 
   <!-- ─── HERO ─────────────────────────── -->
   <section class="hero" id="home">
     <span class="hero-badge">🎢 Staffordshire, United Kingdom</span>
@@ -1237,7 +1237,7 @@
       This is an <strong>unofficial informational page</strong> — not affiliated with or endorsed by Alton Towers Resort or Merlin Entertainments.
       Visit the <a href="https://www.altontowers.com" target="_blank" rel="noopener">official website →</a>
     </p>
-
+ 
     <div class="hero-stats">
       <div class="stat">
         <div class="stat-num">40+</div>
@@ -1257,7 +1257,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- ─── ABOUT ─────────────────────────── -->
   <section id="about">
     <div class="container">
@@ -1283,11 +1283,11 @@
             <span class="pill">🌳 500 Acres</span>
           </div>
         </div>
-
+ 
       </div>
     </div>
   </section>
-
+ 
   <!-- ─── ATTRACTIONS ────────────────────── -->
   <section id="attractions">
     <div class="container">
@@ -1297,7 +1297,7 @@
         <p class="section-subtitle">From white-knuckle coasters to gentle adventures for toddlers — there's thrills and joy for absolutely everyone.</p>
       </div>
       <div class="cards-grid">
-
+ 
         <div class="card reveal">
           <div class="card-banner theme-park">
             <span class="card-emoji">🎢</span>
@@ -1314,7 +1314,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="card reveal">
           <div class="card-banner waterpark">
             <span class="card-emoji">🌊</span>
@@ -1330,7 +1330,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="card reveal">
           <div class="card-banner cbeebies">
             <span class="card-emoji">🧸</span>
@@ -1346,7 +1346,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="card reveal">
           <div class="card-banner golf">
             <span class="card-emoji">⛳</span>
@@ -1362,7 +1362,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="card reveal">
           <div class="card-banner bluey">
             <span class="card-emoji">🐶</span>
@@ -1378,40 +1378,40 @@
             </div>
           </div>
         </div>
-
+ 
       </div>
     </div>
   </section>
-
+ 
   <!-- ─── ACCOMMODATION ─────────────────── -->
   <section id="accommodation">
     <div class="container">
       <span class="section-tag">Stay & Play</span>
       <h2 class="section-title">Where to <span class="accent">Sleep</span></h2>
       <p class="section-subtitle">Stay on-site and wake up steps from the magic. Choose from unique themed hotels, cosy forest lodges, or starlit pods.</p>
-
+ 
       <div class="accom-grid">
-
+ 
         <div class="accom-card reveal">
           <div class="accom-icon">🏰</div>
           <h3>Themed Hotels</h3>
           <p>Three extraordinary themed hotels — including the exclusive <strong>CBeebies Land Hotel</strong> — offer immersive overnight experiences unlike anywhere else. Each hotel tells its own story from check-in to check-out.</p>
         </div>
-
+ 
         <div class="accom-card reveal">
           <div class="accom-icon">🌌</div>
           <h3>Stargazing Pods</h3>
           <p>Spend the night under a canopy of stars in a private Stargazing Pod. These intimate, modern capsules are designed for unforgettable couples' getaways or unique family nights with a view of the cosmos.</p>
         </div>
-
+ 
         <div class="accom-card reveal">
           <div class="accom-icon">🌲</div>
           <h3>Woodland Lodges</h3>
           <p>Nestled deep in the enchanted forest, the Woodland Lodges offer cosy, self-contained cabins for families seeking a nature-inspired retreat within the resort grounds. Pure magic at every turn.</p>
         </div>
-
+ 
       </div>
-
+ 
       <div class="accom-perks reveal">
         <div class="perk"><span class="perk-icon">🍳</span> Breakfast Included</div>
         <div class="perk"><span class="perk-icon">⛳</span> Free Golf Access</div>
@@ -1421,7 +1421,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- ─── TICKETS ───────────────────────── -->
   <section id="tickets">
     <div class="container">
@@ -1430,9 +1430,9 @@
         <h2 class="section-title">Tickets & <span class="accent">Packages</span></h2>
         <p class="section-subtitle">Whether it's a day trip or a full resort break — there's an option for every family and budget.</p>
       </div>
-
+ 
       <div class="tickets-grid">
-
+ 
         <div class="ticket-card day reveal">
           <div class="ticket-icon">🎫</div>
           <h3>Day Tickets</h3>
@@ -1445,7 +1445,7 @@
             <li><span class="check">✓</span> Book online for best price</li>
           </ul>
         </div>
-
+ 
         <div class="ticket-card breaks reveal">
           <div class="ticket-badge">⭐ Best Value</div>
           <div class="ticket-icon">🏖️</div>
@@ -1459,7 +1459,7 @@
             <li><span class="check">✓</span> Free parking & golf</li>
           </ul>
         </div>
-
+ 
         <div class="ticket-card annual reveal">
           <div class="ticket-icon">🎖️</div>
           <h3>Merlin Annual Pass</h3>
@@ -1472,25 +1472,25 @@
             <li><span class="check">✓</span> Member discounts & perks</li>
           </ul>
         </div>
-
+ 
       </div>
-
+ 
       <div class="kids-free reveal">
         <span>👶</span>
         <span>Children under 90 cm enter <strong>FREE</strong> — no ticket required!</span>
       </div>
     </div>
   </section>
-
+ 
   <!-- ─── PLAN ──────────────────────────── -->
   <section id="plan">
     <div class="container">
       <span class="section-tag">Visitor Info</span>
       <h2 class="section-title">Plan Your <span class="accent">Visit</span></h2>
-
+ 
       <div class="plan-grid">
         <ul class="plan-info-list reveal">
-
+ 
           <li class="plan-item">
             <span class="plan-item-icon">🕙</span>
             <div class="plan-item-text">
@@ -1498,7 +1498,7 @@
               <span>Typical park hours: 10:00 am – 8:00 pm. Check the official site for seasonal variations.</span>
             </div>
           </li>
-
+ 
           <li class="plan-item">
             <span class="plan-item-icon">💳</span>
             <div class="plan-item-text">
@@ -1506,7 +1506,7 @@
               <span>Alton Towers operates as a fully cashless venue. Payment by card or mobile wallet only throughout the resort.</span>
             </div>
           </li>
-
+ 
           <li class="plan-item">
             <span class="plan-item-icon">🎟️</span>
             <div class="plan-item-text">
@@ -1514,7 +1514,7 @@
               <span>Pre-booking your tickets online is strongly recommended to guarantee entry, especially during school holidays and peak weekends.</span>
             </div>
           </li>
-
+ 
           <li class="plan-item">
             <span class="plan-item-icon">🅿️</span>
             <div class="plan-item-text">
@@ -1522,7 +1522,7 @@
               <span>On-site parking available for day visitors. Parking is included free with all hotel and short break packages.</span>
             </div>
           </li>
-
+ 
           <li class="plan-item">
             <span class="plan-item-icon">♿</span>
             <div class="plan-item-text">
@@ -1530,9 +1530,9 @@
               <span>Alton Towers is committed to accessibility for all guests. Ride accessibility guides and assistance are available on-site.</span>
             </div>
           </li>
-
+ 
         </ul>
-
+ 
         <div class="map-box reveal">
           <div class="map-header">
             📍 Find Us
@@ -1554,7 +1554,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- ─── REVIEWS ───────────────────────── -->
   <section id="reviews">
     <div class="container">
@@ -1563,9 +1563,9 @@
         <h2 class="section-title">Guest <span class="accent">Reviews</span></h2>
         <p class="section-subtitle">Thousands of families visit every year — here's what some of them had to say.</p>
       </div>
-
+ 
       <div class="reviews-grid">
-
+ 
         <div class="review-card reveal">
           <div class="stars">★★★★★</div>
           <p class="review-text">Best theme park I have ever visited! Rides are exciting, each one brilliant in its own different way. Plenty of choices for rides suitable for all ages.</p>
@@ -1577,7 +1577,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="review-card reveal">
           <div class="stars">★★★★★</div>
           <p class="review-text">Stayed at the CBeebies Hotel — the kids absolutely loved every second. The staff went above and beyond to make it a truly magical experience for the whole family!</p>
@@ -1589,7 +1589,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="review-card reveal">
           <div class="stars">★★★★★</div>
           <p class="review-text">The Smiler is like nothing else on earth — an absolute masterpiece of engineering. Oblivion still gives me butterflies after 10+ visits. Alton Towers never gets old!</p>
@@ -1601,21 +1601,21 @@
             </div>
           </div>
         </div>
-
+ 
       </div>
     </div>
   </section>
-
+ 
   <!-- ─── FOOTER ────────────────────────── -->
   <footer>
     <div class="footer-grid">
-
+ 
       <div class="footer-brand">
         <div class="logo">Alton <span>Towers</span></div>
         <p>Britain's greatest theme park and resort experience — delivering extraordinary adventures in the heart of Staffordshire since 1980.</p>
         <div class="merlin-tag">🌐 Part of Merlin Entertainments</div>
       </div>
-
+ 
       <div class="footer-col">
         <h4>Explore</h4>
         <ul>
@@ -1626,7 +1626,7 @@
           <li><a href="#attractions">Adventure Golf</a></li>
         </ul>
       </div>
-
+ 
       <div class="footer-col">
         <h4>Stay</h4>
         <ul>
@@ -1637,7 +1637,7 @@
           <li><a href="#tickets">Annual Pass</a></li>
         </ul>
       </div>
-
+ 
       <div class="footer-col">
         <h4>Information</h4>
         <ul>
@@ -1650,9 +1650,9 @@
           <li><a href="#">Contact Us</a></li>
         </ul>
       </div>
-
+ 
     </div>
-
+ 
     <div class="footer-bottom">
       <p>© 2025 Alton Towers Resort — Part of Merlin Entertainments Group Ltd. All rights reserved.</p>
       <div class="footer-bottom-links">
@@ -1662,7 +1662,7 @@
       </div>
     </div>
   </footer>
-
+ 
   <!-- ─── PRIVACY POLICY MODAL ──────────── -->
   <div id="privacy-modal" class="modal-overlay" onclick="if(event.target===this) this.classList.remove('open')">
     <div class="modal-box">
@@ -1673,65 +1673,65 @@
         <p>Last updated: January 2025</p>
       </div>
       <div class="modal-body">
-
+ 
         <div class="policy-block">
           <h3>1. About This Page</h3>
           <p>This website is an <strong>unofficial, informational fan page</strong> about Alton Towers Resort. It is not affiliated with, endorsed by, or connected to Alton Towers Resort, Merlin Entertainments Group Ltd., or any of their subsidiaries. All trademarks, logos, and brand names belong to their respective owners.</p>
         </div>
-
+ 
         <div class="policy-block">
           <h3>2. Information We Do Not Collect</h3>
           <p>This website is purely informational and <strong>does not collect, store, or process any personal data</strong> from visitors. There are no forms, user accounts, login systems, payment processors, or data submission mechanisms on this site.</p>
         </div>
-
+ 
         <div class="policy-block">
           <h3>3. Cookies</h3>
           <p>This website does not use tracking cookies, analytics cookies, or advertising cookies. Your browsing activity on this page is not monitored or recorded by us. Your browser may store standard technical session data as part of normal web browsing, which is outside our control.</p>
         </div>
-
+ 
         <div class="policy-block">
           <h3>4. Third-Party Links</h3>
           <p>This page contains links to external websites, including the official Alton Towers Resort website (<a href="https://www.altontowers.com" target="_blank" rel="noopener">altontowers.com</a>) and Merlin Entertainments. We are not responsible for the privacy practices or content of those external sites. We encourage you to review their respective privacy policies before submitting any personal information.</p>
         </div>
-
+ 
         <div class="policy-block">
           <h3>5. Images & Content</h3>
           <p>Photographs used on this page are sourced from <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> and are used under the Unsplash License. Informational content about Alton Towers Resort is compiled from publicly available sources for educational and reference purposes only.</p>
         </div>
-
+ 
         <div class="policy-block">
           <h3>6. Accuracy of Information</h3>
           <p>We make every effort to ensure the information presented is accurate and up to date. However, prices, opening hours, attractions, and other details may change without notice. Always verify current information directly with Alton Towers Resort through their <a href="https://www.altontowers.com" target="_blank" rel="noopener">official website</a> before making any plans or bookings.</p>
         </div>
-
+ 
         <div class="policy-block">
           <h3>7. Children's Privacy</h3>
           <p>This website does not knowingly collect any information from children under the age of 13. As no data collection takes place on this site, there is no specific risk to minors' privacy from visiting this page.</p>
         </div>
-
+ 
         <div class="policy-block">
           <h3>8. Changes to This Policy</h3>
           <p>This Privacy Policy may be updated periodically to reflect changes in the website or applicable regulations. Any updates will be reflected in the "Last updated" date at the top of this document.</p>
         </div>
-
+ 
         <div class="policy-block">
           <h3>9. Contact</h3>
           <p>If you have any questions about this Privacy Policy or the content of this page, you can reach us via the contact section of this website. For official enquiries about Alton Towers Resort, please contact them directly through their official channels.</p>
         </div>
-
+ 
         <div class="policy-disclaimer">
           ⚠️ This is an unofficial informational page. For bookings, official policies, and up-to-date information, please visit <a href="https://www.altontowers.com" target="_blank" rel="noopener">www.altontowers.com</a>
         </div>
-
+ 
       </div>
     </div>
   </div>
-
-
+ 
+  <script>
     // Scroll reveal — elements visible by default, animate only if JS works
     const revealEls = document.querySelectorAll('.reveal');
     revealEls.forEach(el => el.classList.add('animate'));
-
+ 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(el => {
         if (el.isIntersecting) {
@@ -1739,9 +1739,9 @@
         }
       });
     }, { threshold: 0.08 });
-
+ 
     revealEls.forEach(el => observer.observe(el));
-
+ 
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', e => {
@@ -1753,6 +1753,7 @@
       });
     });
   </script>
-
+ 
 </body>
 </html>
+ 
